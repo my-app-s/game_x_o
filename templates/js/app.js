@@ -26,6 +26,7 @@ let listFinalCombo = [
 ];
 let messageResult = document.getElementById("messageResult");
 let orderValue = 0;
+let tryAgainButton = document.getElementById("tryAgainButton");
 
 // Functions
 // Add costume class in div for off show div
@@ -155,11 +156,17 @@ function viewMessage(nameDivForMessage, getMessage) {
     createMessage.style.margin = "20px";
     createMessage.style.fontWeight = "bold";
 
-    nameDivForMessage.append(createMessage);
+    tryAgainButton.style.display = "block";
+
+    nameDivForMessage.append(createMessage, tryAgainButton);
 };
 
 // Code
 // Event for button add class for off show div welcome
 myBtnStart.addEventListener("click", function() {
     addNoneInDiv(divWelcome);
+});
+
+tryAgainButton.addEventListener("click", function() {
+    location.reload();
 });
