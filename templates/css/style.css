@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.class--global {
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 0;
+
+    width: 800px;
+    height: 400px;
+}
+
+.class--welcome {
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+
+    text-align: center;
+}
+
+.class--button {
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+
+    width: 100px;
+
+    font-size: 24px;
+
+    border-radius: 15px;
+}
+
+/* class for game field */
+
+.field--game {
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 0;
+
+    width: 300px;
+    height: 306px;
+
+    /* border: 1px solid black; */
+}
+
+/* class for message result */
+.message--result {
+    margin: 0 auto;
+    padding: 0;
+
+    width: 600px;
+    height: 100px;
+}
+
+/* class for JS */
+.display--none {
+    display: none;
+}
+
+.use--x {
+    background-image: url(../../templates/image/userX.svg);
+    /* background-color: cadetblue; */
+
+    animation: animationX 1s ease;
+}
+
+.use--o {
+    background-image: url(../../templates/image/userO.svg);
+    /* background-color: slateblue; */
+
+    animation: animationO 0.5s linear;
+}
+
+@keyframes animationX {
+    45% {
+        transform: rotate3d(0, 1, 0, 180deg);
+
+        color: turquoise;
+        background-color: turquoise;
+    }
+    75% {
+        transform: rotate3d(0, 1, 0, -180deg);
+    }
+}
+
+@keyframes animationO {
+    45% {
+        transform: rotate3d(0, 1, 1, 45deg);
+
+        color: cornflowerblue;
+        background-color: cornflowerblue;
+    }
+    75% {
+        transform: rotate3d(0, 1, 0, -180deg);
+    }
+}
