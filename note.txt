@@ -1,0 +1,1 @@
+Make a randome click after user click.
