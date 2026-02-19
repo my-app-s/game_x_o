@@ -4,7 +4,7 @@
 
 # General Disclaimer / Общий отказ от ответственности
 
-All repositories and code provided by [Your Name / Organization Name] are provided **"as is"**, without any express or implied warranties.  
+All repositories and code provided by my-app-s are provided **"as is"**, without any express or implied warranties.  
 By using any repository, you acknowledge and agree that the author or organization:
 
 - is not responsible for any direct or indirect damages,  
